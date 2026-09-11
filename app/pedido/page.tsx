@@ -12,21 +12,21 @@ export default function Home() {
 
 
   return (
-    <main className="min-h-screen bg-amber-100 flex items-center justify-center p-6">
+    <main className="min-h-screen bg-gray-100 flex items-center justify-center p-6">
 
-    <div className="w-full max-w-lg bg-yellow-400 rounded-xl shadow-md p-8 grid grid-cols gap-4">
+    <div className="w-full max-w-lg bg-white rounded-xl shadow-md p-8 grid grid-cols gap-4">
 
 
       <Image
-      src="/image.jpeg"
+      src="/reste.jpg"
       alt="Logotipo"
       width={200}
       height={200}
       className="mx-auto mb-4"
       />
 
-      <h1 className="text-2xl font-bold mv-6 text-amber-950">
-        Restaurante - Tesla Lanches
+      <h1 className="text-2xl font-bold mv-6">
+        Restaurante - Leblanc
         </h1>
 
       <input type="text"
@@ -51,7 +51,7 @@ export default function Home() {
 
       <button 
       onClick={cadastrar}
-      className="w-full rounded-xl bg-amber-100 px-4 py-3 font-medium text-amber-950 shadow-sm cursor-pointer hover:bg-amber-200" 
+      className="w-full rounded-xl bg-blue-600 px-4 py-3 font-medium text-white shadow-sm cursor-pointer hover:bg-blue-800" 
       >
         Cadastrar
         </button>
