@@ -6,20 +6,20 @@ import Swal from "sweetalert2"
 
 export default function Login(){
 
-  const router = useRouter()
+const router = useRouter()
 
-  const [usuario, setUsuario] = useState("")
-  const [senha, setSenha] = useState("")
+const [usuario, setUsuario] = useState("")
+const [senha, setSenha] = useState("")
 
-  async function entrar(){
-    if(usuario === "admin" && senha === "123456"){
-      localStorage.setItem("admin_logado","true")
+async function entrar(){
+if(usuario === "admin" && senha === "123456"){
+localStorage.setItem("admin_logado","true")
 
-      await Swal.fire({
-        title: "Logado com sucesso!",
-        icon:"success",
-        confirmButtonText:"Ok"
-      })
+await Swal.fire({
+title: "Logado com sucesso!",
+icon:"success",
+confirmButtonText:"Ok"
+})
 
       router.push("/admin")
       return
