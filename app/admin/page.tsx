@@ -14,7 +14,7 @@ export default function AdminPage(){
 
     async function cadastrarLanche(e: any) {
 
-        e.preventDefault
+        e.preventDefault()
         
         try {
             const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}`,{
