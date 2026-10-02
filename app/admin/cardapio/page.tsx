@@ -18,7 +18,7 @@ export default function CardapioAdmin(){
 
     async function CarregarProdutos(){
         try {
-            const response = await fetch("http://localhost:3001/produtos")
+            const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}produtos`)
 
             if(!response){
                 throw new Error("Erro ao buscar produtos")
